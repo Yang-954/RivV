@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RivV - Pure water for all, healthy lives forever</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="RivV Logo" class="logo-img" onerror="this.style.display='none'; document.querySelector('.logo-text').style.display='block';">
+                <span class="logo-text" style="display:none;">RivV</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#principle">Principle</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#video">Innovation Video</a></li>
+                <li><a href="#contact" class="contact-btn">Contact Us</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1 class="main-title">RivV</h1>
+                <p class="subtitle">Pure water for all, healthy lives forever</p>
+                <div class="innovations">
+                    <h3>Our Core Innovations</h3>
+                    <ul>
+                        <li><span class="icon">✓</span> Full-river section monitoring coverage</li>
+                        <li><span class="icon">✓</span> Self-generating electricity</li>
+                        <li><span class="icon">✓</span> Low Price</li>
+                        <li><span class="icon">✓</span> Intelligent linkage with self-developed AI platform</li>
+                    </ul>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">现在购买</a>
+                    <a href="#team" class="btn btn-secondary">了解更多</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="device-carousel">
+                    <div class="carousel-track">
+                        <div class="device-card">
+                            <img src="images/建模1.jpg" alt="RivV Device Model 1" class="device-img">
+                            <span class="device-label">3D Model</span>
+                        </div>
+                        <div class="device-card">
+                            <img src="images/建模2.jpg" alt="RivV Device Model 2" class="device-img">
+                            <span class="device-label">Physical Device</span>
+                        </div>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-bottom">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64 C480,150 960,-20 1440,64 L1440,120 L0,120 Z" fill="url(#gradient)"/>
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#f0f6fa;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f8fbfe;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Team</h2>
+                <div class="nav-tabs">
+                    <button class="tab-btn active" data-tab="members">Team Members</button>
+                    <button class="tab-btn" data-tab="story">Team's Story</button>
+                    <button class="tab-btn" data-tab="brand">Our Brand</button>
+                    <button class="tab-btn" data-tab="values">Team's Value</button>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-panel active" id="members-panel">
+                    <div class="team-photo">
+                        <img src="images/团队合照.jpg" alt="Team Photo" onerror="this.parentElement.innerHTML='<div class=\'placeholder-photo\'>Team Photo</div>';">
+                    </div>
+                    <p class="team-intro">Our team consists of five high school students from the International Department of Beijing No. 101 Middle School. We are committed to addressing the issue of the limited scope of river water quality monitoring. Every member of our company actively contributed during the product development process, fully leveraging our own strengths.</p>
+                    <div class="members-grid">
+                        <div class="member-card">
+                            <div class="member-img">
+                                <img src="images/Emily.jpg" alt="Emily Dong" onerror="this.parentElement.innerHTML='<div class=\'placeholder\'>Emily</div>';">
+                            </div>
+                            <h3>Emily Dong</h3>
+                            <p class="role">Leader & CEO</p>
+                            <p class="description">Led multiple competitions + solid leadership experience. Understands team strengths, allocates tasks reasonably. Coordinates progress & ensures efficient project advancement.</p>
+                        </div>
+                        <div class="member-card">
+                            <div class="member-img">
+                                <img src="images/Ada.jpg" alt="Ada Jing" onerror="this.parentElement.innerHTML='<div class=\'placeholder\'>Ada</div>';">
+                            </div>
+                            <h3>Ada Jing</h3>
+                            <p class="role">CTO</p>
+                            <p class="description">Strong Python skills; proficient in programming & circuit work. In charge of technical R&D/implementation; solves technical problems (core technical support).</p>
+                        </div>
+                        <div class="member-card">
+                            <div class="member-img">
+                                <img src="images/Iris.jpg" alt="Iris Zhou" onerror="this.parentElement.innerHTML='<div class=\'placeholder\'>Iris</div>';">
+                            </div>
+                            <h3>Iris Zhou</h3>
+                            <p class="role">Business Expert</p>
+                            <p class="description">Former BPC competition CMO; studying IB Business Management. Strong business acumen & leadership; formulates strategies. Connects resources, expands cooperation & drives commercial development.</p>
+                        </div>
+                        <div class="member-card">
+                            <div class="member-img">
+                                <img src="images/Sure.jpg" alt="Sure Zhang" onerror="this.parentElement.innerHTML='<div class=\'placeholder\'>Sure</div>';">
+                            </div>
+                            <h3>Sure Zhang</h3>
+                            <p class="role">COO</p>
+                            <p class="description">Experienced in peripheral product online promotion & e-book operation. Proficient in online content/video creation; manages daily operations & promotion. Boosts project influence.</p>
+                        </div>
+                        <div class="member-card">
+                            <div class="member-img">
+                                <img src="images/Bettie.jpg" alt="Bettie Zhang" onerror="this.parentElement.innerHTML='<div class=\'placeholder\'>Bettie</div>';">
+                            </div>
+                            <h3>Bettie Zhang</h3>
+                            <p class="role">CFO</p>
+                            <p class="description">Rich school club financial management experience. Makes fund plans, calculates income/expenditure accurately. Optimizes resource allocation & guards against financial risks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="story-panel">
+                    <div class="story-content">
+                        <div class="story-text">
+                            <h3>Our Story</h3>
+                            <p>Our story started when we saw the polluted school lake's water quality improve. That made us think of a video we'd seen: a blogger cleaning garbage in a remote Guilin ditch. Unlike well-attended waters like our school lake, many far-flung waterways are overlooked because of their location—so we launched this project.</p>
+                            <div class="media-gallery">
+                                <img src="images/story1.jpg" alt="Sensor Testing 1" class="story-img">
+                                <img src="images/story2.jpg" alt="Sensor Testing 2" class="story-img">
+                                <img src="images/story3.jpg" alt="Analysis Chart" class="story-img">
+                            </div>
+                            <p>At first, we considered using small underwater robots for monitoring. But they were too costly, easily stuck by aquatic plants and mud, and unable to access narrow river channels—making this approach unfeasible. Then we noticed plastic bottles floating on the water, and it hit us: floating objects can reach wherever the current flows. The water itself would act as natural navigation for our device.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="brand-panel">
+                    <div class="brand-content">
+                        <div class="brand-info">
+                            <h3>Our Brand</h3>
+                            <div class="brand-details">
+                                <div class="brand-item">
+                                    <h4>Company Name</h4>
+                                    <p class="brand-name">RivV</p>
+                                    <p class="slogan">Pure water for all, healthy lives forever</p>
+                                </div>
+                                <div class="brand-item">
+                                    <h4>Team Members</h4>
+                                    <p>Emily, Sure, Bettie, Ada, Iris</p>
+                                </div>
+                                <div class="brand-item expandable">
+                                    <h4 class="expandable-header">Why "RivV" <span class="expand-icon">+</span></h4>
+                                    <div class="expandable-content">
+                                        <p>The core root "Riv" in "RivV" is derived from "River", anchoring the project's water-domain scenario; the suffixes correspond to different project positioning:</p>
+                                        <ul>
+                                            <li><strong>"RivVolt"</strong> - Volt stands for energy, which means our buoys are technology-driven river energy monitoring devices.</li>
+                                            <li><strong>"RivVoy"</strong> - Voy means exploration, which means the accurate detection of river water quality.</li>
+                                            <li><strong>"RivVibe"</strong> - We are committed to perceiving and safeguarding the ecological environment.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="brand-item expandable">
+                                    <h4 class="expandable-header">Why this logo <span class="expand-icon">+</span></h4>
+                                    <div class="expandable-content">
+                                        <p>The RivV logo embodies our commitment to environmental protection and water quality enhancement. It features the brand name "RivV" alongside an icon combining flowing water and a gesture of praise. The logo is designed in a blue-green color palette, symbolizing freshness and purity. This reflects our mission to improve river water quality through our products.</p>
+                                        <img src="images/logo.png" alt="RivV Logo" class="logo-showcase" onerror="this.style.display='none';">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="values-panel">
+                    <div class="values-content">
+                        <h3>Team Values</h3>
+                        <div class="values-grid">
+                            <div class="value-card">
+                                <div class="value-icon">🎯</div>
+                                <h4>Campus Insight</h4>
+                                <p>The lakes on our campus made us face the real issues of water quality and monitoring gaps firsthand.</p>
+                            </div>
+                            <div class="value-card">
+                                <div class="value-icon">🤝</div>
+                                <h4>Efficient Collaboration</h4>
+                                <p>We are a tight-knit team with seamless communication and clear roles, turning ideas into reality quickly.</p>
+                            </div>
+                            <div class="value-card">
+                                <div class="value-icon">💧</div>
+                                <h4>Mission-Driven</h4>
+                                <p>We firmly believe that clean water is a fundamental guarantee for every river and community. Therefore, we transform "care for our immediate surroundings" into "effective action" and use technology to contribute tangibly to lasting harmony between humanity and nature.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="principle" class="principle-section">
+        <div class="container">
+            <h2>Design Principle</h2>
+            <div class="principle-content">
+                <div class="principle-text">
+                    <p>We designed the shape of our product in the shape of a bowl to be stable and capable of floating according to Newtonian principles, since the working environment of the object is in water.</p>
+                    <p>According to Newtonian physics, the magnitude of buoyancy force is the product of the density of water, the gravitational constant, and the volume of water the object discharges when it enters the water, which is the same as the volume of the object submerged in water. When the object experiences maximum buoyancy force, the volume of the discharged water is the same as the object's volume.</p>
+                    <p>The bowl is designed to contain both material and empty space. The existence of empty space makes the bowl's volume larger and that makes the bowl capable of experiencing greater buoyancy. Therefore, the bowl is less likely to sink when facing great pressure.</p>
+                    <p class="highlight">Making the shape of our product two bowls is the best way to increase the maximum buoyancy force that can be pushed out of this design to ensure least risk to sink.</p>
+                </div>
+                <div class="principle-visual">
+                    <img src="images/建模3.jpg" alt="Product Design" onerror="this.parentElement.innerHTML='<div class=\'placeholder\'>Product Design Visualization</div>';">
+                    <div class="circuit-diagram">
+                        <img src="images/电路图.jpg" alt="Circuit Diagram" onerror="this.parentElement.innerHTML='<div class=\'placeholder\'>Circuit Diagram</div>';">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process-section">
+        <div class="container">
+            <h2>Our Process</h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Mold modeling</h3>
+                        <p>We used Autodesk fusion software to build the spherical shape. Our model consists the upper and lower bowl and the middle baffle.</p>
+                        <div class="step-images">
+                            <img src="images/建模1.jpg" alt="Modeling Step 1">
+                            <img src="images/建模2.jpg" alt="Modeling Step 2">
+                            <img src="images/建模4.jpg" alt="Modeling Step 3">
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Sensor testing</h3>
+                        <p>We collected water sample from our school and set up the three sensors to test them. We connected them to the main board, and the main board is connected to the computer. We tested if the measured values and the overall analysis can be presented normally on the display end.</p>
+                        <div class="step-images">
+                            <img src="images/传感器调试1.jpg" alt="Sensor Testing 1">
+                            <img src="images/传感器调试2.jpg" alt="Sensor Testing 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Building up</h3>
+                        <p>We placed the sensors and the ceramic power generating board in place and made the oscillating block that hits the power generating board to provide energy. We connected the circuit board of the sensors with the battery for energy supply and the main board for information delivery. We also connected the battery with other forms of energy generator using various wires. Then, we plucked holes on the baffle and the edge of the bowls and connected them with nails and screws.</p>
+                        <div class="step-images">
+                            <img src="images/制作过程1.jpg" alt="Building Process 1">
+                            <img src="images/制作过程2.jpg" alt="Building Process 2">
+                            <img src="images/制作过程3.jpg" alt="Building Process 3">
+                            <img src="images/制作过程4.jpg" alt="Building Process 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Future Plan</h3>
+                        <p>We decide to practice the function of measuring and analyzing data of our machine by putting it into practical use. We decide to use it to determine the water quality of the Kunming lake in the Summer Palace beside our school.</p>
+                        <img src="images/分析图.jpg" alt="Analysis Chart" class="future-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="video-section">
+        <div class="container">
+            <h2>Innovation Video</h2>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <video controls poster="images/video-poster.jpg">
+                        <source src="images/展示视频.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-description">
+                    <p>This is our innovation video. We’ve uploaded it to Bilibili—just search RivV-company to find us!</p>
+                    <a href="https://b23.tv/nq7U4EQ" target="_blank" class="video-link">Watch Online Video →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>We'd love to hear from you! Get in touch with our team for any inquiries about our products or partnership opportunities.</p>
+                    <div class="contact-details">
+                        <p><strong>Email:</strong> contact@rivv.com</p>
+                        <p><strong>Location:</strong> Beijing No. 101 Middle School, International Department</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>RivV</span>
+                    <p>Pure water for all, healthy lives forever</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#team">Our Team</a>
+                    <a href="#principle">Principle</a>
+                    <a href="#process">Process</a>
+                    <a href="#video">Innovation Video</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RivV. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
